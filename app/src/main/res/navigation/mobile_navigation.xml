@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation.xml"
+    app:startDestination="@id/questaoUmFragment">
+
+    <fragment
+        android:id="@+id/questaoUmFragment"
+        android:name="br.edu.infnet.perfil_investidor_tp3.QuestaoUmFragment"
+        android:label="@string/questao_um"
+        tools:layout="@layout/fragment_questao_um" >
+        <action
+            android:id="@+id/next_action"
+            app:destination="@id/questaoDoisFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/questaoDoisFragment"
+        android:name="br.edu.infnet.perfil_investidor_tp3.QuestaoDoisFragment"
+        android:label="@string/questao_dois"
+        tools:layout="@layout/fragment_questao_dois" >
+        <action
+            android:id="@+id/next_action"
+            app:destination="@id/questaoTresFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/questaoTresFragment"
+        android:name="br.edu.infnet.perfil_investidor_tp3.QuestaoTresFragment"
+        android:label="@string/questao_tres"
+        tools:layout="@layout/fragment_questao_tres" >
+        <action
+            android:id="@+id/next_action"
+            app:destination="@id/questaoQuatroFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/questaoQuatroFragment"
+        android:name="br.edu.infnet.perfil_investidor_tp3.QuestaoQuatroFragment"
+        android:label="@string/questao_quatro"
+        tools:layout="@layout/fragment_questao_quatro" >
+        <action
+            android:id="@+id/next_action"
+            app:destination="@id/questaoCincoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/questaoCincoFragment"
+        android:name="br.edu.infnet.perfil_investidor_tp3.QuestaoCincoFragment"
+        android:label="@string/questao_cinco"
+        tools:layout="@layout/fragment_questao_cinco" >
+        <action
+            android:id="@+id/next_action"
+            app:destination="@id/questaoSeisFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/questaoSeisFragment"
+        android:name="br.edu.infnet.perfil_investidor_tp3.QuestaoSeisFragment"
+        android:label="@string/questao_seis"
+        tools:layout="@layout/fragment_questao_seis" >
+        <action
+            android:id="@+id/next_action"
+            app:destination="@id/questaoSeteFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/questaoSeteFragment"
+        android:name="br.edu.infnet.perfil_investidor_tp3.QuestaoSeteFragment"
+        android:label="@string/questao_sete"
+        tools:layout="@layout/fragment_questao_sete" >
+        <action
+            android:id="@+id/next_action"
+            app:destination="@id/questaoOitoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/questaoOitoFragment"
+        android:name="br.edu.infnet.perfil_investidor_tp3.QuestaoOitoFragment"
+        android:label="@string/questao_oito"
+        tools:layout="@layout/fragment_questao_oito" >
+        <action
+            android:id="@+id/next_action"
+            app:destination="@id/questaoNoveFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/questaoNoveFragment"
+        android:name="br.edu.infnet.perfil_investidor_tp3.QuestaoNoveFragment"
+        android:label="@string/questao_nove"
+        tools:layout="@layout/fragment_questao_nove" >
+        <action
+            android:id="@+id/next_action"
+            app:destination="@id/resultadoActivity" />
+    </fragment>
+    <activity
+        android:id="@+id/inicioActivity"
+        android:name="br.edu.infnet.perfil_investidor_tp3.InicioActivity"
+        android:label="activity_inicio"
+        tools:layout="@layout/activity_inicio" />
+    <activity
+        android:id="@+id/sobreItem"
+        android:name="br.edu.infnet.perfil_investidor_tp3.SobreActivity"
+        android:label="activity_sobre"
+        tools:layout="@layout/activity_sobre" />
+    <activity
+        android:id="@+id/resultadoActivity"
+        android:name="br.edu.infnet.perfil_investidor_tp3.ResultadoActivity"
+        android:label="activity_resultado"
+        tools:layout="@layout/activity_resultado" />
+</navigation>
